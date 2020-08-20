@@ -13,9 +13,8 @@ function assignNumber(numberButton) {
      numbers.num2 = numberButton.value;
   }
 
-  console.log('number one is ' + numbers.num1);
-  console.log('number two is ' + numbers.num2);
-  console.log('actionType is ' + actionType);
+  const div2 = document.querySelector('.input-show');
+  div2.innerHTML = `${numbers.num1} ${actionType} ${numbers.num2}`
 
 }
 function changeActionType(actionButton) {
@@ -31,16 +30,34 @@ function findResult() {
       result = numbers.num1 * numbers.num2;
    }else if (actionType === '+') {
       //add
-      result = numbers.num1 + numbers.num2;
+      result = parseInt(numbers.num1) + parseInt(numbers.num2);
 
    }else if (actionType === '-') {
       //minus
       result = numbers.num1 - numbers.num2;
+   }else if (actionType === '%') {
+      //percent
+      result = numbers.num1 % numbers.num2;
    }
 
-
-   console.log('the result is ' + result);
+   const div = document.querySelector('.output-show')
+   div.innerHTML = result;
 }
+
+function refreshNumbers() {
+    //C key
+    document.location.reload(true)
+}
+
+/*function changeSign() {
+   if (result > 0) {
+   //negative
+   result = result - (result) * 2;      
+   }else if (result < 0) {
+   //positive
+   result = result + (result) * 2;
+   }
+}*/
 
 
 

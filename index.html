@@ -12,18 +12,18 @@
   <div class="container">
        <div class="output-and-input-show">
           <div class="output-show">
-          4,152
+          
           </div>
 
           <div class="input-show">
-            3,250 + 740 + 482 - 318
+            
           </div>
        </div>
 
        <div class="keys">
-         <button type="button" class="key-item">C</button>
+         <button type="button" class="key-item" onclick="refreshNumbers()">C</button>
          <button type="button" class="key-item">+/-</button>
-         <button type="button" class="key-item">%</button>
+         <button type="button" class="key-item" onclick="changeActionType(this)" value="%">%</button>
          <button type="button" class="key-item" id="icon-1" onclick="changeActionType(this)" value="/">÷</button>
          <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="7">7</button>
          <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="8">8</button>
