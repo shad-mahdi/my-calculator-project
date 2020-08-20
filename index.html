@@ -4,28 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" inisial-scale=1.0>
     <meta http-equiv="X-UA-compatible" content="ie-edge">
-    <link rel="stylesheet" href="C:\Users\DELL\bbb\style.css">
+    <link rel="stylesheet" href=".\style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
-
     <title>The Calculator</title>
-
-
   </head>
   <body>
   <div class="container">
-
-
-
        <div class="output-and-input-show">
-
           <div class="output-show">
           4,152
-
           </div>
+
           <div class="input-show">
             3,250 + 740 + 482 - 318
-
           </div>
        </div>
 
@@ -33,27 +24,27 @@
          <button type="button" class="key-item">C</button>
          <button type="button" class="key-item">+/-</button>
          <button type="button" class="key-item">%</button>
-         <button type="button" class="key-item" id="icon-1" onclick="division()">÷</button>
-         <button type="button" class="key-item" class="numbers" onclick="key7();key77();">7</button>
-         <button type="button" class="key-item" class="numbers" onclick="key8();key88();">8</button>
-         <button type="button" class="key-item" class="numbers" onclick="key9();key99();">9</button>
-         <button type="button" class="key-item" id="icon-2" onclick="multiplications()">×</button>
-         <button type="button" class="key-item" class="numbers" onclick="key4();key44();">4</button>
-         <button type="button" class="key-item" class="numbers"onclick="key5();key55();">5</button>
-         <button type="button" class="key-item" class="numbers" onclick="key6();key66()">6</button>
-         <button type="button" class="key-item" id="icon-3" onclick="subtraction()">-</button>
-         <button type="button" class="key-item" class="numbers" value="1" onclick="assignNumber(this)" >1</button>
-         <button type="button" class="key-item" class="numbers" value="2"onclick="assignNumber(this)" >2</button>
-         <button type="button" class="key-item" class="numbers" onclick="key3();key33();">3</button>
-         <button type="button" class="key-item" id="icon-4" onclick="addition()">+</button>
-         <button type="button" class="key-item" class="numbers" onclick="key0();key00();">0</button>
+         <button type="button" class="key-item" id="icon-1" onclick="changeActionType(this)" value="/">÷</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="7">7</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="8">8</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="9">9</button>
+         <button type="button" class="key-item" id="icon-2" onclick="changeActionType(this)" value="*">×</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="4">4</button>
+         <button type="button" class="key-item" class="numbers"onclick="assignNumber(this)" value="5">5</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="6">6</button>
+         <button type="button" class="key-item" id="icon-3" onclick="changeActionType(this)" value="-">-</button>
+         <button type="button" class="key-item" class="numbers"  onclick="assignNumber(this)" value="1">1</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="2">2</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="3">3</button>
+         <button type="button" class="key-item" id="icon-4" onclick="changeActionType(this)" value="+">+</button>
+         <button type="button" class="key-item" class="numbers" onclick="assignNumber(this)" value="0">0</button>
          <button type="button" class="key-item"></button>
          <button type="button" class="key-item" onclick="decimal();decimal2;">.</button>
-         <button type="button"  class="key-item" id="icon-5" onclick="equalSign()">=</button>
+         <button type="button"  class="key-item" id="icon-5" onclick="findResult()">=</button>
       </div>
     </div>
 
 
-    <script src="C:\Users\DELL\home.js\home.js"></script>
+    <script src=".\home.js"></script>
   </body>
 </html>
